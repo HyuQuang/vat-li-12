@@ -546,6 +546,7 @@
           <input type="text" id="searchInput" class="search-input" placeholder="Gõ từ khóa để tìm nhanh (vd: nhiệt dung riêng, p-tông, Brown, Bạch Long, âm độ...)" onkeyup="filterCards()">
         </div>
         <div style="display:flex; gap:8px;">
+          <button class="btn-action" style="background:rgba(251,191,36,0.2); border-color:#fbbf24; color:#fbbf24; font-weight:800;" onclick="goToBai4()">📐 Sơ Đồ Chuyển Thể (Bài 4)</button>
           <button class="btn-action highlight-tu" id="btnFilterTu" onclick="toggleOnlyTu()">🔥 Chỉ hiện Câu Tủ</button>
           <button class="btn-action" onclick="toggleAllExplain()">👁️ Ẩn/Hiện Lời Giải</button>
           <button class="btn-action" onclick="window.print()">🖨️ In đề / Lưu PDF</button>
@@ -563,8 +564,20 @@
         <p style="color:#fbcfe8;">Dành riêng cho bạn nếu bạn chưa hiểu bản chất các hiện tượng nhiệt, hay nhầm lẫn giữa nhiệt độ và nội năng, hoặc không biết đọc đồ thị chuyển thể!</p>
       </div>
 
+      <!-- QUICK JUMP BAR TẬP 0 -->
+      <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid #334155; border-radius: 12px; padding: 12px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <span style="font-size: 0.9rem; font-weight: 700; color: #94a3b8;">📌 Chuyển nhanh bài học:</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <a href="#bai-1" style="background:#0f172a; border:1px solid #475569; padding:5px 12px; border-radius:6px; color:#cbd5e1; font-size:0.84rem; text-decoration:none; font-weight:600;">Bài 1: 5 Chữ Nhiệt</a>
+          <a href="#bai-2" style="background:#0f172a; border:1px solid #475569; padding:5px 12px; border-radius:6px; color:#cbd5e1; font-size:0.84rem; text-decoration:none; font-weight:600;">Bài 2: Động học phân tử</a>
+          <a href="#bai-3" style="background:#0f172a; border:1px solid #475569; padding:5px 12px; border-radius:6px; color:#cbd5e1; font-size:0.84rem; text-decoration:none; font-weight:600;">Bài 3: Thí nghiệm Brown</a>
+          <a href="#bai-4" style="background:linear-gradient(135deg, rgba(251,191,36,0.25), rgba(245,158,11,0.1)); border:1.5px solid #fbbf24; padding:5px 14px; border-radius:6px; color:#fbbf24; font-size:0.86rem; text-decoration:none; font-weight:800; display:inline-flex; align-items:center; gap:5px; box-shadow:0 0 12px rgba(251,191,36,0.3);">📐 Bài 4: Sơ Đồ Tam Giác Chuyển Thể 🔥</a>
+          <a href="#bai-5" style="background:#0f172a; border:1px solid #475569; padding:5px 12px; border-radius:6px; color:#cbd5e1; font-size:0.84rem; text-decoration:none; font-weight:600;">Bài 5: Bay hơi vs Sôi</a>
+        </div>
+      </div>
+
       <!-- BÀI HỌC 1: PHÂN BIỆT 5 CHỮ "NHIỆT" -->
-      <div class="card" style="border-color:#ec4899; box-shadow: 0 0 20px rgba(236,72,153,0.15);">
+      <div id="bai-1" class="card" style="border-color:#ec4899; box-shadow: 0 0 20px rgba(236,72,153,0.15);">
         <div class="q-title" style="color:#f472b6; font-size:1.25rem;">
           🔑 BÀI 1: PHÂN BIỆT RẠCH RÒI 5 CHỮ "NHIỆT" (HAY BỊ ĐỀ BÀI LỪA NHẤT)
         </div>
@@ -705,7 +718,7 @@
       </div>
 
       <!-- BÀI HỌC 4: 6 QUÁ TRÌNH CHUYỂN THỂ & ĐỒ THỊ -->
-      <div class="card" style="border-color:#fbbf24; box-shadow: 0 0 25px rgba(251,191,36,0.18);">
+      <div id="bai-4" class="card" style="border-color:#fbbf24; box-shadow: 0 0 25px rgba(251,191,36,0.18);">
         <div class="q-title" style="color:#fbbf24; font-size:1.3rem; margin-bottom:12px;">
           🔑 BÀI 4: 6 QUÁ TRÌNH CHUYỂN THỂ & BÍ KÍP ĐỌC ĐỒ THỊ NHIỆT TRONG 3 GIÂY
         </div>
@@ -729,7 +742,7 @@
             </div>
           </div>
 
-          <svg viewBox="0 0 760 480" width="100%" height="auto" class="svg-diagram" style="overflow:visible; font-family:'Be Vietnam Pro', sans-serif;">
+          <svg viewBox="0 0 760 480" width="100%" height="auto" class="svg-diagram" style="max-width:760px; width:100%; height:auto; aspect-ratio:760/480; display:block; margin:0 auto; overflow:visible; font-family:'Be Vietnam Pro', sans-serif;">
             <defs>
               <!-- Arrow Markers -->
               <marker id="arr-red-v2" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -975,7 +988,7 @@
       </div>
 
       <!-- BÀI HỌC 5: PHÂN BIỆT SỰ BAY HƠI VÀ SỰ SÔI -->
-      <div class="card" style="border-color:#c084fc; box-shadow: 0 0 20px rgba(192,132,252,0.15);">
+      <div id="bai-5" class="card" style="border-color:#c084fc; box-shadow: 0 0 20px rgba(192,132,252,0.15);">
         <div class="q-title" style="color:#c084fc; font-size:1.25rem;">
           🔑 BÀI 5: PHÂN BIỆT SỰ BAY HƠI VÀ SỰ SÔI (ĐỀ THI CỰC KÌ THÍCH HỎI)
         </div>
@@ -3403,6 +3416,22 @@
   </div> <!-- End container -->
 
   <script>
+    
+    function goToBai4() {
+      switchTab('tab-vo-long');
+      setTimeout(function() {
+        var el = document.getElementById('bai-4');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.style.boxShadow = '0 0 35px #fbbf24';
+          el.style.borderColor = '#fbbf24';
+          setTimeout(function() {
+            el.style.boxShadow = '';
+          }, 3500);
+        }
+      }, 150);
+    }
+
     function switchTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
