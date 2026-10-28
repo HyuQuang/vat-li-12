@@ -9,4 +9,4 @@ Website vở ghi tay ôn thi Giữa kì 1 môn Vật Lí 12 chuẩn theo chươn
 👉 **[https://hyuquang.github.io/vat-li-12/](https://hyuquang.github.io/vat-li-12/)**
 
 ---
-*Tác giả: Đặng Huy Quang - Lớp 12A - THPT Cổ Loa*
+*Tác giả: Ngô Quang Huy - Lớp 12A - THPT Cổ Loa*
